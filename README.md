@@ -36,6 +36,15 @@ Explores information extraction techniques by calculating term frequencies and i
   - `term_frequency.csv`: Extracted term frequencies from the corpus.
 - **` Experiment-4_ Term Frequency and NER.docx`**: Detailed breakdown of the algorithms used, including results and insights.
 
+### [Experiment 5: Subword Tokenization and Part-of-Speech (POS) Tagging](./Experiment%20%20-%205)
+Explores subword segmentation algorithms (Byte Pair Encoding, SentencePiece) and syntactic Part-of-Speech (POS) tagging.
+- **`Experiment_5.ipynb`**: Implementation notebook demonstrating pretrained & custom BPE, SentencePiece tokenization, and POS tagging.
+- **`Experiment_5_Current_Environment.ipynb`**: Environment-specific notebook with kernel dependency checks and verified execution.
+- **Datasets & Model Artifacts**:
+  - `input_sub_word_data.txt`: Text corpus used for tokenization and model training.
+  - `my_bpe.model` & `my_bpe.vocab`: Trained SentencePiece BPE model and vocabulary files.
+- **`Experiment-5.docx`**: Comprehensive report covering methodology, algorithm comparisons, and tag distributions.
+
 ---
 
 ## 🛠 Setup & Installation
@@ -49,9 +58,10 @@ To run these experiments locally on your machine, you'll need Python installed a
    ```
 
 2. **Install required dependencies:**
-   *(Note: Ensure you have libraries like `pandas`, `nltk`, `spacy`, or `scikit-learn` installed depending on the specific experiment's requirements).*
+   *(Note: Ensure you have libraries like `pandas`, `nltk`, `spacy`, `transformers`, or `sentencepiece` installed depending on the specific experiment's requirements).*
    ```bash
-   pip install jupyter pandas nltk scikit-learn
+   pip install jupyter pandas nltk scikit-learn transformers sentencepiece spacy
+   python -m spacy download en_core_web_sm
    ```
 
 3. **Run Jupyter Notebook:**
