@@ -45,6 +45,13 @@ Explores subword segmentation algorithms (Byte Pair Encoding, SentencePiece) and
   - `my_bpe.model` & `my_bpe.vocab`: Trained SentencePiece BPE model and vocabulary files.
 - **`Experiment-5.docx`**: Comprehensive report covering methodology, algorithm comparisons, and tag distributions.
 
+### [Experiment 6: GloVe Word Embeddings and Statistical N-gram Language Model](./Experiment%20-%206)
+Implements word embeddings with GloVe (both from scratch and pretrained) and a statistical N-gram language model from scratch for next-word prediction.
+- **`Experiment - 6.ipynb`**: Implementation notebook covering custom AdaGrad GloVe, pretrained Gensim GloVe (`glove-wiki-gigaword-50`), and Unigram/Bigram/Trigram next-word prediction with backoff.
+- **Datasets**:
+  - `glove_corpus.txt`: Text corpus used to train GloVe embeddings from scratch.
+- **`Experiment-6.docx`**: Experiment problem statement and reference corpus.
+
 ---
 
 ## 🛠 Setup & Installation
@@ -58,9 +65,9 @@ To run these experiments locally on your machine, you'll need Python installed a
    ```
 
 2. **Install required dependencies:**
-   *(Note: Ensure you have libraries like `pandas`, `nltk`, `spacy`, `transformers`, or `sentencepiece` installed depending on the specific experiment's requirements).*
+   *(Note: Ensure you have libraries like `numpy`, `pandas`, `nltk`, `spacy`, `gensim`, `transformers`, or `sentencepiece` installed depending on the specific experiment's requirements).*
    ```bash
-   pip install jupyter pandas nltk scikit-learn transformers sentencepiece spacy
+   pip install jupyter numpy pandas nltk scikit-learn transformers sentencepiece spacy gensim
    python -m spacy download en_core_web_sm
    ```
 
