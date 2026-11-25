@@ -5,3 +5,9 @@
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
+
+# Hugging Face local cache & large downloadable datasets
+.cache/
+*/.cache/
+Experiment - 7/IMDB-Dataset.csv
+Experiment - 8/hindi/

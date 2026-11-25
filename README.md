@@ -52,6 +52,16 @@ Implements word embeddings with GloVe (both from scratch and pretrained) and a s
   - `glove_corpus.txt`: Text corpus used to train GloVe embeddings from scratch.
 - **`Experiment-6.docx`**: Experiment problem statement and reference corpus.
 
+### [Experiment 7: Sentiment Analysis on IMDB Movie Reviews](./Experiment%20-%207)
+Implements and compares four sentiment classification approaches on the 50K IMDB Movie Reviews dataset using Accuracy, Precision, Recall, F1-Score, and Confusion Matrices.
+- **`Experiment - 7.ipynb`**: Implementation notebook comparing TF-IDF + Logistic Regression, Bidirectional LSTM, Vanilla Transformer Encoder, and Pretrained BERT (`textattack/bert-base-uncased-imdb`).
+- **`Experiment-7.docx`**: Experiment specification and dataset links.
+
+### [Experiment 8: Multilingual Abstractive Text Summarization (mT5 vs. mBART)](./Experiment%20-%208)
+Implements and evaluates multilingual abstractive summarization on the Hindi split of the XL-Sum dataset using ROUGE-1, ROUGE-2, ROUGE-L, and mBERTScore.
+- **`Experiment - 8.ipynb`**: Implementation notebook comparing `Anshugh/mt5-small-hindi-xlsum` (mT5) and `ai4bharat/IndicBART-XLSum` (mBART) with Unicode-aware ROUGE and `bert-base-multilingual-cased` BERTScore.
+- **`Experiment-8.docx`**: Experiment specification and XL-Sum dataset reference.
+
 ---
 
 ## 🛠 Setup & Installation
@@ -65,9 +75,9 @@ To run these experiments locally on your machine, you'll need Python installed a
    ```
 
 2. **Install required dependencies:**
-   *(Note: Ensure you have libraries like `numpy`, `pandas`, `nltk`, `spacy`, `gensim`, `transformers`, or `sentencepiece` installed depending on the specific experiment's requirements).*
+   *(Note: Ensure you have libraries like `numpy`, `pandas`, `nltk`, `spacy`, `gensim`, `torch`, `transformers`, `datasets`, `rouge-score`, `bert-score`, or `sentencepiece` installed depending on the specific experiment's requirements).*
    ```bash
-   pip install jupyter numpy pandas nltk scikit-learn transformers sentencepiece spacy gensim
+   pip install jupyter numpy pandas matplotlib nltk scikit-learn torch transformers datasets rouge-score bert-score sentencepiece spacy gensim
    python -m spacy download en_core_web_sm
    ```
 
